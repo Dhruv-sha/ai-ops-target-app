@@ -13,7 +13,7 @@ app.get('/api/checkout', (req, res) => {
   // Simulate a random DB crash
   throw new Error("PostgreSQL connection pool limit reached");
 });
-
+//hello
 // THE PLUG-IN: This must be the LAST middleware
 app.use(guardianPlugin('checkout-service'));
 
